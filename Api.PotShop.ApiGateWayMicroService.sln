@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.PotShop.ApiGateWayMicroService", "Api.PotShop.ApiGateWayMicroService\Api.PotShop.ApiGateWayMicroService.csproj", "{C64E42C0-171E-4E2D-9E40-8ED37C65AD24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C64E42C0-171E-4E2D-9E40-8ED37C65AD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64E42C0-171E-4E2D-9E40-8ED37C65AD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64E42C0-171E-4E2D-9E40-8ED37C65AD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64E42C0-171E-4E2D-9E40-8ED37C65AD24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3612B81-F02C-4AC7-B75E-A4296A65CF26}
+	EndGlobalSection
+EndGlobal
