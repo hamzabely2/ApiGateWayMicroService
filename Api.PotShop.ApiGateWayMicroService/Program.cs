@@ -7,9 +7,8 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Configuration.AddJsonFile("item.json", optional: false, reloadOnChange: true);
 builder.Configuration.AddJsonFile("color.json", optional: false, reloadOnChange: true);
-
-builder.Configuration.AddJsonFile("userSevice.json", optional: false, reloadOnChange: true);
-builder.Configuration.AddJsonFile("OrderService.json", optional: false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("material.json", optional: false, reloadOnChange: true);
+builder.Configuration.AddJsonFile("category.json", optional: false, reloadOnChange: true);
 
 builder.Services.AddOcelot(builder.Configuration);
 

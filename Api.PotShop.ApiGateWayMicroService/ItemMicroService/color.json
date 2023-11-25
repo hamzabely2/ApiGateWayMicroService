@@ -12,6 +12,29 @@
       "UpstreamPathTemplate": "/gateway/color",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
     },
-
+    {
+      "DownstreamPathTemplate": "/api/color/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/color/create",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/color/delete/{colorId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/color/delete/{colorId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    }
   ]
 }
