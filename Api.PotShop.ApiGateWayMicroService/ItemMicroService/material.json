@@ -1,0 +1,6 @@
+﻿namespace Api.PotShop.ApiGateWayMicroService.ItemMicroService
+{
+    public class material
+    {
+    }
+}
