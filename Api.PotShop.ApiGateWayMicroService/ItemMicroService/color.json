@@ -1,16 +1,17 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/item",
+      "DownstreamPathTemplate": "/api/color",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7263
+          "Port": 7001
         }
       ],
-      "UpstreamPathTemplate": "/gateway/item",
+      "UpstreamPathTemplate": "/gateway/color",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
-    }
+    },
+
   ]
 }
