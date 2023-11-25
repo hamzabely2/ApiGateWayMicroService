@@ -1,6 +1,40 @@
-﻿namespace Api.PotShop.ApiGateWayMicroService.ItemMicroService
-{
-    public class category
+﻿{
+  "Routes": [
     {
+      "DownstreamPathTemplate": "/api/category",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/category",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/category/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/category/create",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/category/delete/{categoryId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/category/delete/{categoryId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
     }
+  ]
 }

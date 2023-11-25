@@ -1,6 +1,40 @@
-﻿namespace Api.PotShop.ApiGateWayMicroService.ItemMicroService
-{
-    public class material
+﻿{
+  "Routes": [
     {
+      "DownstreamPathTemplate": "/api/materil",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/materil",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/materil/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/materil/create",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/materil/delete/{materilId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/materil/delete/{materilId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
     }
+  ]
 }
