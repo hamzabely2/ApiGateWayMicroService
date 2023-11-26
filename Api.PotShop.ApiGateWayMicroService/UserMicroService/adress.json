@@ -25,7 +25,7 @@
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/adress/user/",
+      "DownstreamPathTemplate": "/api/adress/user",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -33,7 +33,7 @@
           "Port": 7001
         }
       ],
-      "UpstreamPathTemplate": "/gateway/adress/user/",
+      "UpstreamPathTemplate": "/gateway/adress/user",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
     },
     {
