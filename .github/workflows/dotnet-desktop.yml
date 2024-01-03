@@ -38,5 +38,6 @@ jobs:
             script: |
               ./deployApigateway.sh
               
+              
         - name: Remove Docker Images
           run: sudo docker image prune -a -f
