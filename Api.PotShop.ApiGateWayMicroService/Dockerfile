@@ -2,8 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+ENV DOTNET_URLS=http://+:1000/
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -21,4 +20,5 @@ RUN dotnet publish "./Api.PotShop.ApiGateWayMicroService.csproj" -c $BUILD_CONFI
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+EXPOSE 1000
 ENTRYPOINT ["dotnet", "Api.PotShop.ApiGateWayMicroService.dll"]
