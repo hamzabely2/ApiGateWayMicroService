@@ -19,13 +19,13 @@ jobs:
         - name: Build Docker images
           run: |
             sudo docker-compose -f docker-compose.yml build 
-            sudo docker save apigateway > apigateway.tar 
+            sudo docker save apigateway-app > apigateway-app.tar 
 
         - name: Install sshpass
           run: sudo apt-get install -y sshpass
         - name: Transfer Docker Image to Server
           run: |
-            sshpass -p ${{ secrets.SSH_PASSWORD }} scp -o StrictHostKeyChecking=no apigateway.tar ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/root/
+            sshpass -p ${{ secrets.SSH_PASSWORD }} scp -o StrictHostKeyChecking=no apigateway-app.tar ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/root/
           env:
             SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         - name: Load Docker Image on Server
