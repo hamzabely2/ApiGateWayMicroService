@@ -5,8 +5,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7001
+          "Host": "130.61.88.123",
+          "Port": 1001
         }
       ],
       "UpstreamPathTemplate": "/gateway/item",
