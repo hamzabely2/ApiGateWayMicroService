@@ -24,10 +24,6 @@ builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
-
-
-app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.UseCors("TestPolicy");
